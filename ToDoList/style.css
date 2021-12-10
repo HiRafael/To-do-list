@@ -1,0 +1,139 @@
+:root{
+	--bg-main: #6E85B2;
+	--text-color: #000;
+}
+
+.darkMode:root{
+	--bg-main: #3E2C41;
+	--text-color: #fff;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: var(--bg-main);
+	transition: 1s;
+}
+
+.checkbox{
+	width: 40px;
+    	height: 10px;
+    	background-color: #000;
+   	border-radius: 20px;
+   	margin: 10px;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	padding: 5px;
+}
+
+#check{
+	display: none;
+}
+
+.bola{
+	width: 20px;
+    	height: 18px;
+   	position: absolute;
+  	background-color: #ccc;
+  	border-radius: 50%;
+    	left: 12px;
+	transform: translate(0px);
+	transition: 1s;
+}
+
+#check,
+input:checked ~ .bola {
+  	transform: translate(27px);
+  	transition: 1s;
+}
+
+.label{
+	display: flex;
+   	justify-content: space-between;
+    	width: 100%;
+	cursor: pointer;
+}
+
+.fa-sun{
+	color: yellow;
+}
+
+.fa-moon{
+	color: #fff;
+}
+
+.instruction{
+	color: var(--text-color);
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	margin-top: 90px;
+    	font-size: 2em;
+	font-family: 'Roboto', sans-serif;
+	transition: 1s;
+}
+
+.form{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 100px;
+	font-family: 'Roboto', sans-serif;
+}
+
+#userInput{
+	font-size: 2em;
+	width: 60%;
+	padding: 5px;
+}
+
+#btn{
+	border: none;
+	padding: 10px;
+    	border-radius: 10px;
+    	margin-left: 10px;
+	cursor: pointer;
+}
+
+.list{
+	width: 90%;
+    	margin: 50px 0 50px 65px;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+	padding: 10px;
+	font-size: 1.7rem;
+	margin: 15px;
+	background-color: #fff;
+	border-radius: 15px;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	justify-content: space-between;
+}
+
+li:hover{
+	cursor: pointer;
+}
+
+.feito{
+	background-color: #92fe93;
+}
+
+.dell{
+	cursor: pointer; 
+    	border: none;
+	margin-right: 20px;
+	background-color: #fff;
+}
+
+.deletar{
+	display: none;
+}
